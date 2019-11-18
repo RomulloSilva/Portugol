@@ -9,9 +9,10 @@ programa
 		cadeia carnOni, herbiHema
 
 		escreva("Digite o tipo de animal\n")
-		leia(veterouinver)
+		leia(veterInver)
 
-		se (veterouinver == "vertebrado")
+		//Parte 1: análise dos vertebrados
+		se (veterInver == "vertebrado")
 		{
 			escreva("Digite o tipo de animal\n")
 			leia(aveMami)
@@ -19,15 +20,15 @@ programa
 			{
 				escreva("Digite o tipo de animal\n")
 				leia(carnOni)
-				se(carnOmi == "carnivoro")
+				se(carnOni == "carnivoro")
 				{
 				escreva("Aguia\n")
 				}
 				senao
 				{
-					se(carnOmi == "onivoro")
+					se(carnOni == "onivoro")
 					{
-						escreva("Pombo\n")
+						escreva("Pomba\n")
 					}
 				}
 			}
@@ -37,57 +38,58 @@ programa
 				{
 					escreva("Digite o tipo de animal\n")
 					leia(carnOni)
-					se(carnOmi == "herbivoro")
+					se(carnOni == "herbivoro")
 					{
 						escreva("Vaca\n")
 					}
-					senao
+				senao
+				{
+					se(carnOni == "onivoro")
 					{
-						se(carnOmi == "onivoro")
-						{
-							escreva("Homem\n")
-						}
+						escreva("Homem\n")
 					}
+				}
 				}
 			}
 		}
-		senao// eu parei apos deve ser modificado ainda//
+
+		senao// Parte 2: de analise dos invertebrados.
 		{
-			se (veterouinver == "invertebrado")
+			se (veterInver == "invertebrado")
 			{
 				escreva("Digite o tipo de animal\n")
-				leia(aveMami)
-				se(aveMami == "ave")
+				leia(insAneli)
+				se(insAneli == "inseto")
 				{
 					escreva("Digite o tipo de animal\n")
-					leia(carnOni)
-					se(carnOmi == "carnivoro")
+					leia(herbiHema)
+					se(herbiHema == "hematofago")
 					{
-						escreva("Aguia\n")
+						escreva("pulga\n")
 					}
 					senao
 					{
-						se(carnOmi == "onivoro")
+						se(herbiHema == "herbivoro")
 						{
-							escreva("Pombo\n")
+							escreva("largata\n")
 						}
 					}
 				}
 			senao
 			{
-				se(aveMami == "mamifero")
+				se(insAneli == "anelidio")
 				{
 					escreva("Digite o tipo de animal\n")
-					leia(carnOni)
-					se(carnOmi == "herbivoro")
+					leia(herbiHema)
+					se(herbiHema == "hematofago")
 					{
-						escreva("Vaca\n")
+						escreva("sanguessuga\n")
 					}
 					senao
 					{
-						se(carnOmi == "onivoro")
+						se(herbiHema == "onivoro")
 						{
-							escreva("Homem\n")
+							escreva("minhoca\n")
 						}
 					}
 				}
@@ -102,7 +104,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1533; 
+ * @POSICAO-CURSOR = 995; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
