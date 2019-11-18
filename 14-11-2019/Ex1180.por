@@ -11,7 +11,7 @@ programa
 		pos = 0
 		
 		
-		para(cont = 1; cont < 10; cont++)
+		para(cont = 1; cont < 10; cont++)// Aqui ac
 		{
 			escreva(" Digite um valor de seu interesse\n")
 			leia(X[cont])
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 211; 
+ * @POSICAO-CURSOR = 205; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
